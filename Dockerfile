@@ -1,6 +1,7 @@
 FROM  ubuntu:latest
 MAINTAINER manikandanre999@gmail.com
 RUN apt -y update && apt upgrade
+RUN apt install -y zip
 RUN apt install -y apache2
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page254/photogenic.zip /var/www/html/
 WORKDIR /var/www/html/
