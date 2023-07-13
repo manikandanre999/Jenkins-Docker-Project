@@ -1,5 +1,6 @@
 FROM  ubuntu:latest
 MAINTAINER manikandanre999@gmail.com
+RUN apt update && apt upgrade -y
 RUN apt install -y httpd \
  zip\ 
  unzip
